@@ -19,42 +19,48 @@ This project is a Laravel application using Vue.js and Inertia.js with user auth
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/EngrJEHernandez/laravuestrap-code-test.git
    ```
 
 2. **Navigate to the project directory:**
    ```bash
-   cd your-repo-name
+   cd laravuestrap-code-test
    ```
 
-3. **Install PHP dependencies:**
+3. **Create the database:**
+   Make sure to create a database named `laravuedb` in your MySQL server:
+   ```sql
+   CREATE DATABASE laravuedb;
+   ```
+
+4. **Install PHP dependencies:**
    ```bash
    composer install
    ```
 
-4. **Set up your environment file:**
+5. **Set up your environment file:**
    Copy the `.env.example` file to `.env`:
    ```bash
    cp .env.example .env
    ```
-   Then, update your `.env` file with your database credentials and any other necessary environment variables.
+   Then, update your `.env` file with your database credentials and any other necessary environment variables. Ensure the `DB_DATABASE` field is set to `laravuedb`.
 
-5. **Generate the application key:**
+6. **Generate the application key:**
    ```bash
    php artisan key:generate
    ```
 
-6. **Run the database migrations:**
+7. **Run the database migrations:**
    ```bash
    php artisan migrate
    ```
 
-7. **Install JavaScript dependencies:**
+8. **Install JavaScript dependencies:**
    ```bash
    npm install
    ```
 
-8. **Compile your assets:**
+9. **Compile your assets:**
    ```bash
    npm run dev
    ```
@@ -179,7 +185,5 @@ Pest is a testing framework for PHP that offers a clean and expressive API. Here
   - **Register:** `/register`
   - **Dashboard:** `/dashboard`
 
-## Thank you
-
-
-
+## Thank You
+data
